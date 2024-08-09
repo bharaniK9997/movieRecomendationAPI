@@ -1,0 +1,141 @@
+/* Base styles for the login container */
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.bg-secondary {
+    background: url('./assets/bg.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensure the background image covers the whole viewport */
+    height: 100vh;
+    position: relative; /* Required for absolute positioning of child elements */
+}
+
+.bg-white {
+    background: rgba(255, 255, 255, 0.2); /* More transparent background */
+    padding: 20px;
+    border-radius: 12px; /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    width: 30%;
+    max-width: 400px; /* Prevents the container from being too wide on larger screens */
+    position: absolute; /* Absolute positioning to move it away from the left edge */
+    left: 50%; /* Move the container 50% from the left edge of its parent */
+    transform: translateX(-50%); /* Center the container horizontally */
+}
+
+.p-3 {
+    padding: 20px;
+}
+
+.rounded {
+    border-radius: 12px;
+}
+
+.btn {
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #00bcd4, #009688); /* Gradient button */
+    color: #fff;
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #009688, #00bcd4);
+    transform: scale(1.05);
+}
+
+.btn-deafault {
+    background: rgba(255, 255, 255, 0.2); /* More transparent background */
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.btn-deafault:hover {
+    background: rgba(255, 255, 255, 0.3); /* Slightly less transparent on hover */
+    color: #000;
+}
+
+/* Input fields */
+input[type='email'],
+input[type='password'] {
+    border: 1px solid #5e5c5c;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+input[type='email']:focus,
+input[type='password']:focus {
+    border-color: #00bcd4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Label styles */
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 14px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #222;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for links */
+a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Toast Container */
+.Toastify__toast-container {
+    top: 20px;
+}
+
+/* Animation for button and inputs */
+@keyframes buttonHover {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+.btn:hover {
+    animation: buttonHover 0.3s ease-in-out;
+}
+
+
+.login{
+    color: #fff;
+}
+
+.form{
+    color: transparent;
+}
+
+.box{
+    padding-left: 50%;
+}
